@@ -1,7 +1,7 @@
 "use client"
 import React, { FC, useState } from "react";
 import dynamic from "next/dynamic";
-
+import SocialMedea from "./SocialMedea";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -52,19 +52,7 @@ const Navbar = () => {
 
                         {/* Side Buttons */}
                         <div className="hidden justify-end pr-16 sm:flex lg:pr-0">
-                            <a
-                                href="/#"
-                                className="px-7 py-3 text-base font-medium hover:text-primary-500 "
-                            >
-                                Sign in
-                            </a>
-
-                            <a
-                                href="/#"
-                                className="rounded-md bg-primary px-7 py-3 text-base font-medium bg-primary-500 text-white hover:bg-primary-500/70 transition-colors"
-                            >
-                                Sign Up
-                            </a>
+                            <SocialMedea />
                         </div>
                     </div>
                 </div>
