@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import { FC } from 'react'
 import { FaInstagram, FaFacebook, FaWhatsapp } from "react-icons/fa";
-interface SocialMedeaProps {
-
-}
+interface SocialMedeaProps { }
 
 const SocialMedea: FC<SocialMedeaProps> = ({ }) => {
     return <div className='flex justify-center items-center text-primary-500 text-3xl gap-3'>

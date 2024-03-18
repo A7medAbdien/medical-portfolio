@@ -2,6 +2,9 @@
 import React, { FC, useState } from "react";
 import dynamic from "next/dynamic";
 import SocialMedea from "./SocialMedea";
+import Image from "next/image";
+import Link from "next/link";
+import { NavbarStrings } from "@/data/strings";
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
@@ -12,14 +15,14 @@ const Navbar = () => {
                 <div className="relative -mx-4 flex items-center justify-between max-sm:px-5">
 
                     {/* LOGO */}
-
                     <div className="w-60 max-w-full px-4">
-                        <a href="/#" className="block w-full py-5">
-                            <img
-                                src="https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg"
+                        <Link href="/#" className="block w-full py-5">
+                            <Image
+                                width={200} height={200}
+                                src={NavbarStrings.Logo}
                                 alt="logo"
                             />
-                        </a>
+                        </Link>
                     </div>
 
                     {/* Menu */}
@@ -38,14 +41,12 @@ const Navbar = () => {
                             <nav
                                 // :className="!navbarOpen && 'hidden' "
                                 id="navbarCollapse"
-                                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg px-6 py-5 shadow  lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${!open && "hidden"
-                                    } `}
+                                className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg px-6 py-5 shadow  lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${!open && "hidden"}`}
                             >
                                 <ul className="block lg:flex">
-                                    <ListItem NavLink="/#">Home</ListItem>
-                                    <ListItem NavLink="/#">Payment</ListItem>
-                                    <ListItem NavLink="/#">About</ListItem>
-                                    <ListItem NavLink="/#">Blog</ListItem>
+                                    {NavbarStrings.links.map(({ link, title }, i) =>
+                                        <ListItem key={i} NavLink={link}>{title}</ListItem>
+                                    )}
                                 </ul>
                             </nav>
                         </div>
@@ -72,12 +73,12 @@ const ListItem: FC<ListItemProps> = ({ children, NavLink }) => {
     return (
         <>
             <li>
-                <a
+                <Link
                     href={NavLink}
                     className="flex py-2 text-base font-medium  hover:text-primary-500 lg:ml-12 lg:inline-flex transition-colors"
                 >
                     {children}
-                </a>
+                </Link>
             </li>
         </>
     );
