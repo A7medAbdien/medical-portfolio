@@ -11,17 +11,17 @@ const HomeCards = [
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
-        icon: FaHeartbeat
+        Icon: FaHeartbeat
     },
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
-        icon: FaHeartbeat
+        Icon: FaHeartbeat
     },
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
-        icon: FaHeartbeat
+        Icon: FaHeartbeat
     },
 ]
 
