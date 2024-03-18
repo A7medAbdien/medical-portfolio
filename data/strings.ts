@@ -1,8 +1,28 @@
+import { FaHeartbeat } from "react-icons/fa"
+
 const Pages = [
     { title: "Home", link: "./" },
     { title: "Payment", link: "./Payment" },
     { title: "About", link: "./About" },
     { title: "Blog", link: "./Blog" },
+]
+
+const HomeCards = [
+    {
+        title: "Home",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+        icon: FaHeartbeat
+    },
+    {
+        title: "Home",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+        icon: FaHeartbeat
+    },
+    {
+        title: "Home",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+        icon: FaHeartbeat
+    },
 ]
 
 const SocialMedia = [
@@ -17,5 +37,6 @@ const NavbarStrings = {
 }
 
 export {
-    NavbarStrings
+    NavbarStrings,
+    HomeCards
 }
