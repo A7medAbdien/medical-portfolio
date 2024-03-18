@@ -9,7 +9,7 @@ interface SecondaryButtonProps {
 const SecondaryButton: FC<SecondaryButtonProps> = ({ link = "/#", text }) => {
     return <Link
         href={link}
-        className="shadow-md shadow-primary-500/50 px-7 py-3 text-base font-semibold hover:text-primary-500 border-primary-500 border-2 rounded-md text-primary-500"
+        className="hover:shadow-md hover:shadow-primary-500/50 px-7 py-3 text-base font-semibold hover:text-primary-500 border-primary-500 border-2 rounded-md text-primary-500 transition-all"
     >
         {text}
     </Link>
