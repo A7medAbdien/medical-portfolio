@@ -7,23 +7,36 @@ const Pages = [
     { title: "Blog", link: "./Blog" },
 ]
 
+
+
 const HomeCards = [
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
-        Icon: FaHeartbeat
+        img: "/img/tree.jpg"
     },
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
-        Icon: FaHeartbeat
+        img: "/img/tree.jpg"
     },
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
-        Icon: FaHeartbeat
+        img: "/img/tree.jpg"
     },
 ]
+
+const HomePageContent = {
+    mutedText: "Join Us",
+    title: "Lorem ipsum dolor sit amet ",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+    primaryButton: { text: "Hi", link: "./#" },
+    secondaryButton: { text: "Hi", link: "./#" },
+    img: "/img/tree.jpg",
+    cards: HomeCards
+
+}
 
 const SocialMedia = [
     { icon: "", link: "" },
@@ -38,5 +51,5 @@ const NavbarStrings = {
 
 export {
     NavbarStrings,
-    HomeCards
+    HomePageContent
 }

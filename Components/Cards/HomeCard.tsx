@@ -1,15 +1,14 @@
-import { FC } from 'react'
-import { FaHeartbeat } from 'react-icons/fa'
+import { FC } from 'react';
 import { CardBody, CardContainer, CardItem } from '../UI/3d-card';
 import Image from 'next/image';
 
 interface HomeCardProps {
     title: string;
     description: string;
-    Icon: any;
+    img: string;
 }
 
-const HomeCard: FC<HomeCardProps> = ({ title, description, Icon }) => {
+const HomeCard: FC<HomeCardProps> = ({ title, description, img }) => {
     return (
         <CardContainer className="inter-var">
             <CardBody className="relative group/card w-auto  h-auto rounded-xl p-6 shadow-lg shadow-primary-500/50">
@@ -17,14 +16,14 @@ const HomeCard: FC<HomeCardProps> = ({ title, description, Icon }) => {
                     translateZ="50"
                     className="text-xl font-bold text-tertiary-600"
                 >
-                    Make things float in air
+                    {title}
                 </CardItem>
 
                 <CardItem
                     translateZ="100"
                     className="w-full mt-4 rounded-xl shadow-md shadow-primary-500/50">
                     <Image
-                        src="/img/tree.jpg"
+                        src={img}
                         height="500"
                         width="500"
                         className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
@@ -36,7 +35,7 @@ const HomeCard: FC<HomeCardProps> = ({ title, description, Icon }) => {
                     translateZ="60"
                     className="text-tertiary-400 text-lg max-w-sm mt-2"
                 >
-                    Hover over this card to unleash the power of CSS perspective
+                    {description}
                 </CardItem>
             </CardBody>
         </CardContainer>
