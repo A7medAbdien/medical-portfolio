@@ -9,7 +9,7 @@ import { HomePageContent } from "@/data/strings";
 
 export default function Home() {
 	return (
-		<main className="w-full min-h-[90vh] flex flex-col items-start justify-center text-tertiary-500 overflow-x-hidden">
+		<main className="w-full min-h-[90vh] flex flex-col items-center justify-center text-tertiary-500 overflow-x-hidden">
 
 			{/* Intro Section */}
 			<section className="px-0 md:px-[12vw]  w-full min-h-[90vh] flex flex-col items-start justify-center mb-24">
@@ -88,6 +88,15 @@ export default function Home() {
 				</div>
 			</section>
 
+			{/* Blog Section */}
+			<section className="px-0 md:px-[12vw] w-[60%] flex flex-col items-center justify-between gap-4 text-center py-48">
+				{/* Text */}
+
+				<p className="text-primary-500 font-semibold uppercase text-lg">{HomePageContent.BookingSectionContent.mutedText}</p>
+				<h1 className="text-7xl font-semibold uppercase">{HomePageContent.BookingSectionContent.title}</h1>
+				<p className="text-xl">{HomePageContent.BookingSectionContent.description}</p>
+				<PrimaryButton className="mt-10" {...HomePageContent.BookingSectionContent.button} />
+			</section>
 		</main>
 	);
 }

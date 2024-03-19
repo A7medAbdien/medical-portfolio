@@ -4,12 +4,13 @@ import { FC } from 'react'
 interface PrimaryButtonProps {
     link: string;
     text: string;
+    className?: string;
 }
 
-const PrimaryButton: FC<PrimaryButtonProps> = ({ link = "/#", text }) => {
+const PrimaryButton: FC<PrimaryButtonProps> = ({ link = "/#", text, className }) => {
     return <Link
         href={link}
-        className="hover:shadow-lg hover:shadow-tertiary-500/50 rounded-md bg-primary px-7 py-3 text-base font-medium bg-primary-500 text-white  transition-all"
+        className={`${className} hover:shadow-lg hover:shadow-tertiary-500/50 rounded-md bg-primary px-7 py-3 text-base font-medium bg-primary-500 text-white  transition-all`}
     >
         {text}
     </Link>

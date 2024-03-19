@@ -7,6 +7,12 @@ const Pages = [
     { title: "Blog", link: "./Blog" },
 ]
 
+const BookingSectionContent = {
+    mutedText: "appointment",
+    title: "Book it now!",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+    button: { text: 'Learn more...', link: "./#" }
+}
 
 const BlogCards = [
     {
@@ -111,7 +117,8 @@ const HomePageContent = {
     NumberCardContent,
     ToolSectionContent,
     CaseSectionContent,
-    BlogSectionContent
+    BlogSectionContent,
+    BookingSectionContent
 }
 
 const SocialMedia = [
