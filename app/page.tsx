@@ -7,10 +7,10 @@ import { HomePageContent } from "@/data/strings";
 
 export default function Home() {
 	return (
-		<main className="w-full min-h-[90vh] flex flex-col items-start justify-center text-tertiary-500 p-5">
+		<main className="w-full min-h-[90vh] flex flex-col items-start justify-center text-tertiary-500">
 
 			{/* Intro Section */}
-			<section className="w-full min-h-[90vh] flex flex-col items-start justify-center mb-24">
+			<section className="px-0 md:px-[12vw]  w-full min-h-[90vh] flex flex-col items-start justify-center mb-24">
 				{/* Text */}
 				<div className="w-1/2 flex flex-col items-start justify-center gap-10 py-10">
 					<p className="text-primary-500 font-semibold">{HomePageContent.mutedText}</p>
@@ -31,12 +31,12 @@ export default function Home() {
 			</section>
 
 			{/* Numbers Section */}
-			<section className="w-full flex items-center justify-between gap-10 my-24 px">
+			<section className="px-0 md:px-[12vw] w-full flex items-center justify-between gap-10 my-24 px">
 				{HomePageContent.NumberCardContent.map((card, i) => <NumberCard key={i} {...card} />)}
 			</section>
 
 			{/* Tools Section */}
-			<section className="w-full h-[70vh] flex items-start justify-between my-24">
+			<section className="px-0 md:px-[12vw] w-full h-[70vh] flex items-start justify-between my-24">
 
 				{/* Text */}
 				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-10 py-10">
@@ -51,6 +51,28 @@ export default function Home() {
 				</div>
 				{/* Image */}
 				<div className="w-1/2 h-full bg-tertiary-50/20"></div>
+			</section>
+
+
+			{/* Case Studies Section */}
+			<section className="px-0 md:px-[12vw]  w-full h-[70vh] flex flex-col items-start justify-between my-24  bg-secondary-50">
+
+				{/* Text */}
+				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-10 mb-10">
+					<p className="text-primary-500 font-semibold">{HomePageContent.mutedText}</p>
+					<h1 className="text-6xl font-semibold">{HomePageContent.ToolSectionContent.title}</h1>
+					<p className="text-xl">{HomePageContent.ToolSectionContent.description}</p>
+
+					{/* Buttons */}
+					<div className="hidden justify-end pr-16 sm:flex lg:pr-0 gap-3">
+						<TextButton {...HomePageContent.ToolSectionContent.button} />
+					</div>
+				</div>
+
+				{/* Image */}
+				<div className="w-full h-full bg-tertiary-500 mt-10">
+
+				</div>
 			</section>
 
 		</main>
