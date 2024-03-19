@@ -1,4 +1,4 @@
-import HomeCard from "@/Components/Cards/HomeCard";
+import IntoCard from "@/Components/Cards/IntroCard";
 import NumberCard from "@/Components/Cards/NumberCard";
 import PrimaryButton from "@/Components/UI/Buttons/PrimaryButton";
 import SecondaryButton from "@/Components/UI/Buttons/SecondaryButton";
@@ -24,7 +24,7 @@ export default function Home() {
 
 				{/* Cards */}
 				<div className="w-full flex items-center justify-between gap-10 mt-10">
-					{HomePageContent.cards.map((card, i) => <HomeCard key={i} {...card} />)}
+					{HomePageContent.cards.map((card, i) => <IntoCard key={i} {...card} />)}
 				</div>
 			</section>
 

@@ -14,7 +14,7 @@ const NumberCardContent: NumberCardProps[] = [
     { title: "Happy Customer", number: 100, numberUnit: "K" },
 ]
 
-const HomeCards = [
+const IntroCards = [
     {
         title: "Home",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
@@ -39,7 +39,7 @@ const HomePageContent = {
     primaryButton: { text: "Hi", link: "./#" },
     secondaryButton: { text: "Hi", link: "./#" },
     img: "/img/tree.jpg",
-    cards: HomeCards,
+    cards: IntroCards,
     NumberCardContent,
 }
 

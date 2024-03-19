@@ -2,13 +2,13 @@ import { FC } from 'react';
 import { CardBody, CardContainer, CardItem } from '../UI/3d-card';
 import Image from 'next/image';
 
-interface HomeCardProps {
+interface IntroCardProps {
     title: string;
     description: string;
     img: string;
 }
 
-const HomeCard: FC<HomeCardProps> = ({ title, description, img }) => {
+const IntroCard: FC<IntroCardProps> = ({ title, description, img }) => {
     return (
         <CardContainer className="inter-var">
             <CardBody className="relative group/card w-auto  h-auto rounded-xl p-6 shadow-lg shadow-primary-500/50">
@@ -42,4 +42,4 @@ const HomeCard: FC<HomeCardProps> = ({ title, description, img }) => {
     )
 }
 
-export default HomeCard
+export default IntroCard
