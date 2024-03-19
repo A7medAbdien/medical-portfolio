@@ -8,6 +8,35 @@ const Pages = [
 ]
 
 
+const BlogCards = [
+    {
+        title: "Lorem ipsum dolor sit amet.",
+        date: { day: 18, month: "Jan" },
+        img: "/img/temp.png",
+        category: "cats"
+    },
+    {
+        title: "Lorem ipsum dolor sit amet.",
+        date: { day: 18, month: "Jan" },
+        img: "/img/temp.png",
+        category: "cats"
+    },
+    {
+        title: "Lorem ipsum dolor sit amet.",
+        date: { day: 18, month: "Jan" },
+        img: "/img/temp.png",
+        category: "cats"
+    },
+]
+
+const BlogSectionContent = {
+    mutedText: "Some Nice SHit",
+    title: "Case Studies",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+    cards: BlogCards,
+
+}
+
 const CaseSectionCards = [
     {
         title: "Case Studies",
@@ -31,7 +60,6 @@ const CaseSectionCards = [
         category: "cats"
     },
 ]
-
 
 const CaseSectionContent = {
     mutedText: "Some Nice SHit",
@@ -82,7 +110,8 @@ const HomePageContent = {
     cards: IntroCards,
     NumberCardContent,
     ToolSectionContent,
-    CaseSectionContent: CaseSectionContent
+    CaseSectionContent,
+    BlogSectionContent
 }
 
 const SocialMedia = [

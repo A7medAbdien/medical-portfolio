@@ -1,3 +1,4 @@
+import BlogCard from "@/Components/Cards/BlogCard";
 import CaseCard from "@/Components/Cards/CaseCard";
 import IntoCard from "@/Components/Cards/IntroCard";
 import NumberCard from "@/Components/Cards/NumberCard";
@@ -8,7 +9,7 @@ import { HomePageContent } from "@/data/strings";
 
 export default function Home() {
 	return (
-		<main className="w-full min-h-[90vh] flex flex-col items-start justify-center text-tertiary-500">
+		<main className="w-full min-h-[90vh] flex flex-col items-start justify-center text-tertiary-500 overflow-x-hidden">
 
 			{/* Intro Section */}
 			<section className="px-0 md:px-[12vw]  w-full min-h-[90vh] flex flex-col items-start justify-center mb-24">
@@ -65,13 +66,28 @@ export default function Home() {
 					<p className="text-xl">{HomePageContent.CaseSectionContent.description}</p>
 				</div>
 
-				{/* Image */}
-
 				{/* Cards */}
 				<div className="w-full flex items-center justify-between gap-5 mt-10">
 					{HomePageContent.CaseSectionContent.cards.map((card, i) => <CaseCard key={i} {...card} />)}
 				</div>
 			</section>
+
+			{/* Blog Section */}
+			<section className="px-0 md:px-[12vw]  w-full flex flex-col items-start justify-between py-36">
+
+				{/* Text */}
+				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-5 mb-10">
+					<p className="text-primary-500 font-semibold">{HomePageContent.BlogSectionContent.mutedText}</p>
+					<h1 className="text-6xl font-semibold">{HomePageContent.BlogSectionContent.title}</h1>
+					<p className="text-xl">{HomePageContent.BlogSectionContent.description}</p>
+				</div>
+
+				{/* Cards */}
+				<div className="w-full flex items-center justify-center gap-20 mt-10">
+					{HomePageContent.BlogSectionContent.cards.map((card, i) => <BlogCard key={i} {...card} />)}
+				</div>
+			</section>
+
 		</main>
 	);
 }
