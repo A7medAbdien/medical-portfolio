@@ -11,7 +11,7 @@ interface CaseCardProps {
 }
 
 const CaseCard: FC<CaseCardProps> = ({ title, category, description, img, button }) => {
-    return <div className="h-fit w-1/3 flex flex-col justify-center items-center bg-white">
+    return <div className="group h-fit w-1/3 flex flex-col justify-center items-center bg-white">
         <div className="w-full">
             <Image
                 src={img}
@@ -25,7 +25,7 @@ const CaseCard: FC<CaseCardProps> = ({ title, category, description, img, button
             <p className="text-primary-500 font-semibold uppercase">{category}</p>
             <p className='text-xl font-semibold'>{title}</p>
             <p>{description}</p>
-            <SecondaryButton className='rounded-full my-5' {...button} />
+            <SecondaryButton className='rounded-full my-5 group-hover:shadow-lg group-hover:shadow-primary-500/50' {...button} />
         </div>
 
     </div>
