@@ -1,3 +1,4 @@
+import { NumberCardProps } from "@/Components/Cards/NumberCard"
 
 const Pages = [
     { title: "Home", link: "./" },
@@ -6,7 +7,12 @@ const Pages = [
     { title: "Blog", link: "./Blog" },
 ]
 
-
+const NumberCardContent: NumberCardProps[] = [
+    { title: "Happy Customer", number: 100, numberUnit: "K" },
+    { title: "Happy Customer", number: 100, numberUnit: "K" },
+    { title: "Happy Customer", number: 100, numberUnit: "K" },
+    { title: "Happy Customer", number: 100, numberUnit: "K" },
+]
 
 const HomeCards = [
     {
@@ -33,8 +39,8 @@ const HomePageContent = {
     primaryButton: { text: "Hi", link: "./#" },
     secondaryButton: { text: "Hi", link: "./#" },
     img: "/img/tree.jpg",
-    cards: HomeCards
-
+    cards: HomeCards,
+    NumberCardContent,
 }
 
 const SocialMedia = [
