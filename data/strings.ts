@@ -2,10 +2,16 @@ import { NumberCardProps } from "@/Components/Cards/NumberCard"
 
 const Pages = [
     { title: "Home", link: "./" },
-    { title: "Payment", link: "./Payment" },
+    { title: "Case Studies", link: "./Case" },
     { title: "About", link: "./About" },
     { title: "Blog", link: "./Blog" },
 ]
+
+const ToolSectionContent = {
+    title: "Check Our Tools",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+    button: { text: 'Learn more...', link: "./#" }
+}
 
 const NumberCardContent: NumberCardProps[] = [
     { title: "Happy Customer", number: 100, numberUnit: "K" },
@@ -41,6 +47,7 @@ const HomePageContent = {
     img: "/img/tree.jpg",
     cards: IntroCards,
     NumberCardContent,
+    ToolSectionContent
 }
 
 const SocialMedia = [
