@@ -7,7 +7,8 @@ const Pages = [
     { title: "Blog", link: "./Blog" },
 ]
 
-const CaseSectionContent = [
+
+const CaseSectionCards = [
     {
         title: "Case Studies",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
@@ -30,6 +31,15 @@ const CaseSectionContent = [
         category: "cats"
     },
 ]
+
+
+const CaseSectionContent = {
+    mutedText: "Some Nice SHit",
+    title: "Case Studies",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+    cards: CaseSectionCards,
+
+}
 
 const ToolSectionContent = {
     title: "Check Our Tools",
@@ -72,7 +82,7 @@ const HomePageContent = {
     cards: IntroCards,
     NumberCardContent,
     ToolSectionContent,
-    CaseSectionContent
+    CaseSectionContent: CaseSectionContent
 }
 
 const SocialMedia = [

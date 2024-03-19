@@ -59,20 +59,19 @@ export default function Home() {
 			<section className="px-0 md:px-[12vw]  w-full flex flex-col items-start justify-between py-36 bg-secondary-50">
 
 				{/* Text */}
-				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-10 mb-10">
-					<p className="text-primary-500 font-semibold">{HomePageContent.mutedText}</p>
-					<h1 className="text-6xl font-semibold">{HomePageContent.ToolSectionContent.title}</h1>
-					<p className="text-xl">{HomePageContent.ToolSectionContent.description}</p>
+				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-5 mb-10">
+					<p className="text-primary-500 font-semibold">{HomePageContent.CaseSectionContent.mutedText}</p>
+					<h1 className="text-6xl font-semibold">{HomePageContent.CaseSectionContent.title}</h1>
+					<p className="text-xl">{HomePageContent.CaseSectionContent.description}</p>
 				</div>
 
 				{/* Image */}
 
 				{/* Cards */}
 				<div className="w-full flex items-center justify-between gap-5 mt-10">
-					{HomePageContent.CaseSectionContent.map((card, i) => <CaseCard key={i} {...card} />)}
+					{HomePageContent.CaseSectionContent.cards.map((card, i) => <CaseCard key={i} {...card} />)}
 				</div>
 			</section>
-
 		</main>
 	);
 }
