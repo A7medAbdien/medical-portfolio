@@ -11,32 +11,33 @@ interface IntroCardProps {
 const IntroCard: FC<IntroCardProps> = ({ title, description, img }) => {
     return (
         <CardContainer className="inter-var">
-            <CardBody className="relative group/card w-auto  h-auto rounded-xl p-6 shadow-lg shadow-primary-500/50">
+            <CardBody className="text-white relative group/card  rounded-xl p-2 shadow-lg shadow-primary-500/50 w-full h-96">
                 <CardItem
-                    translateZ="50"
-                    className="text-xl font-bold text-tertiary-600"
-                >
-                    {title}
-                </CardItem>
-
-                <CardItem
-                    translateZ="100"
-                    className="w-full mt-4 rounded-xl shadow-md shadow-primary-500/50">
+                    translateZ="60"
+                    className="w-full h-full rounded-xl flex flex-col justify-center items-center p-5">
                     <Image
                         src={img}
                         height="500"
                         width="500"
-                        className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                        className="h-full w-full object-cover rounded-xl group-hover/card:shadow-xl absolute"
                         alt="thumbnail"
                     />
+                    <CardItem
+                        translateZ="100"
+                        className="text-3xl font-bold"
+                    >
+                        {title}
+                    </CardItem>
+
+                    <CardItem
+                        as="p"
+                        translateZ="60"
+                        className="text-lg max-w-sm mt-5"
+                    >
+                        {description}
+                    </CardItem>
                 </CardItem>
-                <CardItem
-                    as="p"
-                    translateZ="60"
-                    className="text-tertiary-400 text-lg max-w-sm mt-2"
-                >
-                    {description}
-                </CardItem>
+
             </CardBody>
         </CardContainer>
     )

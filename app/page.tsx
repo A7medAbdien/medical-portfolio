@@ -12,7 +12,7 @@ export default function Home() {
 		<main className="w-full min-h-[90vh] flex flex-col items-center justify-center text-tertiary-500 overflow-x-hidden">
 
 			{/* Intro Section */}
-			<section className="px-0 md:px-[12vw]  w-full min-h-[90vh] flex flex-col items-start justify-center mb-24">
+			<section className="bg-primary-50 px-0 md:px-[12vw]  w-full min-h-[90vh] flex flex-col items-start justify-center pb-24">
 				{/* Text */}
 				<div className="w-1/2 flex flex-col items-start justify-center gap-10 py-10">
 					<p className="text-primary-500 font-semibold">{HomePageContent.mutedText}</p>
@@ -27,7 +27,7 @@ export default function Home() {
 				</div>
 
 				{/* Cards */}
-				<div className="w-full flex items-center justify-between gap-10 mt-10">
+				<div className="w-full flex items-center justify-between text-center gap-10 mt-10">
 					{HomePageContent.cards.map((card, i) => <IntoCard key={i} {...card} />)}
 				</div>
 			</section>
