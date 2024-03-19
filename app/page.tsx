@@ -1,3 +1,4 @@
+"use client"
 import BlogCard from "@/Components/Cards/BlogCard";
 import CaseCard from "@/Components/Cards/CaseCard";
 import IntoCard from "@/Components/Cards/IntroCard";

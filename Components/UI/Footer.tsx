@@ -1,3 +1,4 @@
+"use client"
 import { FooterContent } from '@/data/strings'
 import { FC } from 'react'
 import TextButton from './Buttons/TextButton'

@@ -1,6 +1,5 @@
 "use client"
 import React, { FC, useState } from "react";
-import dynamic from "next/dynamic";
 import SocialMedea from "./SocialMedea";
 import Image from "next/image";
 import Link from "next/link";
@@ -62,7 +61,7 @@ const Navbar = () => {
     );
 };
 
-export default dynamic(() => Promise.resolve(Navbar), { ssr: false })
+export default Navbar
 
 interface ListItemProps {
     children: any,
