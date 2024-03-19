@@ -57,7 +57,7 @@ export default function Home() {
 
 
 			{/* Case Studies Section */}
-			<section className="px-0 md:px-[12vw]  w-full flex flex-col items-start justify-between py-36 bg-secondary-50">
+			<section className="px-0 md:px-[12vw] min-h-screen w-full flex flex-col items-start justify-between py-36 bg-secondary-50">
 
 				{/* Text */}
 				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-5 mb-10">
@@ -73,7 +73,7 @@ export default function Home() {
 			</section>
 
 			{/* Blog Section */}
-			<section className="px-0 md:px-[12vw]  w-full flex flex-col items-start justify-between py-36">
+			<section className="px-0 md:px-[12vw] h-screen w-full flex flex-col items-start justify-between py-36">
 
 				{/* Text */}
 				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-5 mb-10">
