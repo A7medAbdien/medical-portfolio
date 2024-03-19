@@ -7,6 +7,30 @@ const Pages = [
     { title: "Blog", link: "./Blog" },
 ]
 
+const CaseSectionContent = [
+    {
+        title: "Case Studies",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+        button: { text: 'Learn more...', link: "./#" },
+        img: "/img/tree.jpg",
+        category: "cats"
+    },
+    {
+        title: "Case Studies",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+        button: { text: 'Learn more...', link: "./#" },
+        img: "/img/tree.jpg",
+        category: "cats"
+    },
+    {
+        title: "Case Studies",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
+        button: { text: 'Learn more...', link: "./#" },
+        img: "/img/tree.jpg",
+        category: "cats"
+    },
+]
+
 const ToolSectionContent = {
     title: "Check Our Tools",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequatur possimus iste, ad consectetur",
@@ -47,7 +71,8 @@ const HomePageContent = {
     img: "/img/tree.jpg",
     cards: IntroCards,
     NumberCardContent,
-    ToolSectionContent
+    ToolSectionContent,
+    CaseSectionContent
 }
 
 const SocialMedia = [

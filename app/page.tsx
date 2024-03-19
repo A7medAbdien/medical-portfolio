@@ -1,3 +1,4 @@
+import CaseCard from "@/Components/Cards/CaseCard";
 import IntoCard from "@/Components/Cards/IntroCard";
 import NumberCard from "@/Components/Cards/NumberCard";
 import PrimaryButton from "@/Components/UI/Buttons/PrimaryButton";
@@ -55,23 +56,20 @@ export default function Home() {
 
 
 			{/* Case Studies Section */}
-			<section className="px-0 md:px-[12vw]  w-full h-[70vh] flex flex-col items-start justify-between my-24  bg-secondary-50">
+			<section className="px-0 md:px-[12vw]  w-full flex flex-col items-start justify-between py-36 bg-secondary-50">
 
 				{/* Text */}
 				<div className="w-1/2 h-full flex flex-col items-start justify-center gap-10 mb-10">
 					<p className="text-primary-500 font-semibold">{HomePageContent.mutedText}</p>
 					<h1 className="text-6xl font-semibold">{HomePageContent.ToolSectionContent.title}</h1>
 					<p className="text-xl">{HomePageContent.ToolSectionContent.description}</p>
-
-					{/* Buttons */}
-					<div className="hidden justify-end pr-16 sm:flex lg:pr-0 gap-3">
-						<TextButton {...HomePageContent.ToolSectionContent.button} />
-					</div>
 				</div>
 
 				{/* Image */}
-				<div className="w-full h-full bg-tertiary-500 mt-10">
 
+				{/* Cards */}
+				<div className="w-full flex items-center justify-between gap-5 mt-10">
+					{HomePageContent.CaseSectionContent.map((card, i) => <CaseCard key={i} {...card} />)}
 				</div>
 			</section>
 
