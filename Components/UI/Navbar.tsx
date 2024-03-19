@@ -44,8 +44,8 @@ const Navbar = () => {
                                 className={`absolute right-4 top-full w-full max-w-[250px] rounded-lg px-6 py-5 shadow  lg:static lg:block lg:w-full lg:max-w-full lg:shadow-none ${!open && "hidden"}`}
                             >
                                 <ul className="block lg:flex">
-                                    {NavbarStrings.links.map(({ link, title }, i) =>
-                                        <ListItem key={i} NavLink={link}>{title}</ListItem>
+                                    {NavbarStrings.links.map(({ link, text }, i) =>
+                                        <ListItem key={i} NavLink={link}>{text}</ListItem>
                                     )}
                                 </ul>
                             </nav>

@@ -1,10 +1,10 @@
 import { NumberCardProps } from "@/Components/Cards/NumberCard"
 
 const Pages = [
-    { title: "Home", link: "./" },
-    { title: "Case Studies", link: "./Case" },
-    { title: "About", link: "./About" },
-    { title: "Blog", link: "./Blog" },
+    { text: "Home", link: "./" },
+    { text: "Case Studies", link: "./Case" },
+    { text: "About", link: "./About" },
+    { text: "Blog", link: "./Blog" },
 ]
 
 const BookingSectionContent = {
@@ -133,6 +133,7 @@ const NavbarStrings = {
 }
 
 export {
+    Pages,
     NavbarStrings,
     HomePageContent
 }
