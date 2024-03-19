@@ -1,4 +1,8 @@
 import { NumberCardProps } from "@/Components/Cards/NumberCard"
+import React from "react"
+import { FaFacebook, FaInstagram, FaPhone, FaWhatsapp } from "react-icons/fa"
+import { FaLocationDot } from "react-icons/fa6"
+import { IoIosMail } from "react-icons/io"
 
 const Pages = [
     { text: "Home", link: "./" },
@@ -122,10 +126,23 @@ const HomePageContent = {
 }
 
 const SocialMedia = [
-    { icon: "", link: "" },
-    { icon: "", link: "" },
-    { icon: "", link: "" },
+    { icon: React.createElement(FaInstagram), link: "https://www.instagram.com/" },
+    { icon: React.createElement(FaFacebook), link: "https://www.instagram.com/" },
+    { icon: React.createElement(FaWhatsapp), link: "https://www.instagram.com/" },
 ]
+
+const FooterContacts = [
+    { link: "", Icon: React.createElement(FaPhone), text: "+973 3366 3366" },
+    { link: "", Icon: React.createElement(FaLocationDot), text: `4517 Washington Ave. Manchester, Kentucky 39495` },
+    { link: "", Icon: React.createElement(IoIosMail), text: "test@gmail.com" },
+]
+
+const FooterContent = {
+    copyRights: "Lorem ipsum dolor sit amet © consectetur adipisicing.",
+    Pages,
+    FooterContacts,
+    SocialMedia
+}
 
 const NavbarStrings = {
     Logo: "https://cdn.tailgrids.com/2.0/image/assets/images/logo/logo-primary.svg",
@@ -134,6 +151,8 @@ const NavbarStrings = {
 
 export {
     Pages,
+    SocialMedia,
     NavbarStrings,
-    HomePageContent
+    HomePageContent,
+    FooterContent
 }
