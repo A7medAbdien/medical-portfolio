@@ -1,4 +1,3 @@
-import { FaHeartbeat } from "react-icons/fa"
 
 const Pages = [
     { title: "Home", link: "./" },
